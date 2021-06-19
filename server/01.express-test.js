@@ -5,7 +5,7 @@ const express  = require('express')
 const server = express()
 
 
-//
+//编写路由处理不同url请求
 server.get('/',(req,res)=>{
 	res.send("<strong>hello world</strong>")
 })
