@@ -1,21 +1,18 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <p @click="$store.commit('add')">couter:{{$store.state.counter}}</p>
-    <p @click="$store.dispatch('add')">async counter:{{$store.state.counter}}</p>
-    <!-- <p>double counter:{{$store.getters.doubleCounter}}</p> -->
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <img alt="Vue logo" src="../assets/logo.png">
+    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
   </div>
 </template>
 
-<script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator';
+import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
 
-export default {
-  name: 'Home',
+@Component({
   components: {
     HelloWorld,
   },
-}
+})
+export default class Home extends Vue {}
 </script>
