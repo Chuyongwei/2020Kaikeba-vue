@@ -4,7 +4,7 @@
     "module": "esnext",
     "strict": true,
     "jsx": "preserve",
-    // "noImplicitAny": false,
+    "noImplicitAny": false,//无视检查
     "importHelpers": true,
     "moduleResolution": "node",
     "experimentalDecorators": true,
