@@ -112,3 +112,17 @@ class Child extends Parent{
 	}
 }
 const c = new Child()
+
+//使用泛型
+interface Result<T>{
+	ok:0|1;
+	data:T;
+}
+
+function getResult<T>(data:T):Result<T>{
+	return {ok:1,data};
+}
+
+getResult<string>('hello')
+
+getResult(1)
