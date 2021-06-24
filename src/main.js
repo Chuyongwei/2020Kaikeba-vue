@@ -4,6 +4,7 @@ import create from "./utils/create";
 import router from './krouter'
 // import store from './store'
 import store from './kstore'
+import "@/icons"
 
 Vue.config.productionTip = false
 
